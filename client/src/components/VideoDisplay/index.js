@@ -18,7 +18,7 @@ class VideoDisplay extends Component {
   fetchVideo = async () => {
     const { id } = this.props.match.params;
     try {
-      const response = await axios.get(`http://localhost:8000/videos/${id}`);
+      const response = await axios.get(`http://localhost:10000/videos/${id}`);
       this.setState({ video: response.data });
     } catch (error) {
       console.error('Error fetching video', error);
