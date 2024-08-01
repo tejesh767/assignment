@@ -16,7 +16,7 @@ class Listing extends Component {
 
   fetchVideos = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/videos');
+      const response = await axios.get('http://localhost:10000/videos');
       this.setState({ videos: response.data });
     } catch (error) {
       console.error('Error fetching videos', error);
